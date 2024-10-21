@@ -1,5 +1,6 @@
 export default class CompareHands {
-
+  // Lägg till värdena för comparers i testerna
+  // Finns redan i isRoyalStraightFlush
   static suits = '♥♦♣♠';
   static suitRank = {
     '♠': 4,
@@ -13,7 +14,15 @@ export default class CompareHands {
   static comparer(hand1, hand2) {
     let comparers = [
       'isRoyalStraightFlush',
-      // ... andra jämförare ...
+      'isFourOfAKind',
+      'isFullHouse',
+      'isHighestCard',
+      'isOnePair',
+      'isFlush',
+      'isStraight',
+      'isStraightFlush',
+      'isThreeOfAKind',
+      'isTwoPair',      
     ];
 
     for (let comparer of comparers) {
